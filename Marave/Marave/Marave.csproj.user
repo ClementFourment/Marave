@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\clemF\Desktop\Marave\Marave\Marave\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Characteristics.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ChooseInitiator.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="De.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fight.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Game.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MasterOfArms.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Merlin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Wheel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Characteristics.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ChooseInitiator.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="De.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Fight.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Game.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MasterOfArms.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Merlin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Wheel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

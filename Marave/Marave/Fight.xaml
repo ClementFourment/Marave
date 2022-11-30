@@ -1,0 +1,95 @@
+﻿<Page x:Class="Marave.Fight"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Marave"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="Fight">
+
+    <Grid Background="#8E8775">
+
+        <Image x:Name="hero" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,165,360,0">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="300" UriSource="/Marave;component/images/hero_idle_9.png" />
+            </Image.Source>
+        </Image>
+        <TextBlock x:Name="heroHealthText" Width="50" Height="25" Text="100/100" Foreground="White" Panel.ZIndex="100" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,365,26"/>
+        <ProgressBar x:Name="heroHealth" HorizontalAlignment="Center" VerticalAlignment="Center" Height="10" Margin="100,0,480,35" Width="100" Foreground="#FFFF0E0E" BorderBrush="#FF1F1F1F" Background="#FF232323">
+            <ProgressBar.Effect>
+                <DropShadowEffect ShadowDepth="2" BlurRadius="2"/>
+            </ProgressBar.Effect>
+        </ProgressBar>
+        <Image Width="20" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,480,35">
+            <Image.Effect>
+                <DropShadowEffect ShadowDepth="2" BlurRadius="2"/>
+            </Image.Effect>
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="300" UriSource="/Marave;component/images/heart.png" />
+            </Image.Source>
+        </Image>
+
+
+
+
+
+
+
+
+        <Image x:Name="enemy" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300,165,0,19">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="300" UriSource="/Marave;component/images/enemy/enemy_idle_11.png" />
+            </Image.Source>
+        </Image>
+        <TextBlock x:Name="enemyHealthText" Width="50" Height="25" Text="100/100" Foreground="White" Panel.ZIndex="100" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300,0,0,26"/>
+        <ProgressBar x:Name="enemyHealth" HorizontalAlignment="Center" VerticalAlignment="Center" Height="10" Margin="300,0,0,35" Width="100" Foreground="#FFFF0E0E" BorderBrush="#FF1F1F1F" Background="#FF232323">
+            <ProgressBar.Effect>
+                <DropShadowEffect ShadowDepth="2" BlurRadius="2"/>
+            </ProgressBar.Effect>
+        </ProgressBar>
+        <Image Width="20" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="200,0,0,35">
+            <Image.Effect>
+                <DropShadowEffect ShadowDepth="2" BlurRadius="2"/>
+            </Image.Effect>
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="300" UriSource="/Marave;component/images/heart.png" />
+            </Image.Source>
+        </Image>
+        <Frame x:Name="frame" Source="" NavigationUIVisibility="Hidden" BorderThickness="0" Panel.ZIndex="20000">
+
+        </Frame>
+
+
+        <Border x:Name="heroInfo" Background="WhiteSmoke" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="370,242,0,0" Width="100" Height="80" Opacity="0.5" Panel.ZIndex="10000000">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Text="Niveau : " FontWeight="Bold" />
+                    <TextBlock Text="Force : " FontWeight="Bold" />
+                    <TextBlock Text="Armure : " FontWeight="Bold" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock x:Name="heroInfoLevel"></TextBlock>
+                    <TextBlock x:Name="heroInfoStrength"></TextBlock>
+                    <TextBlock x:Name="heroInfoArmor"></TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <Border x:Name="enemyInfo" Background="WhiteSmoke" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="716,253,0,0" Width="100" Height="80" Opacity="0.5" Panel.ZIndex="10000000">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Text="Niveau : " FontWeight="Bold" />
+                    <TextBlock Text="Force : " FontWeight="Bold" />
+                    <TextBlock Text="Armure : " FontWeight="Bold" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock x:Name="enemyInfoLevel"></TextBlock>
+                    <TextBlock x:Name="enemyInfoStrength"></TextBlock>
+                    <TextBlock x:Name="enemyInfoArmor"></TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Page>

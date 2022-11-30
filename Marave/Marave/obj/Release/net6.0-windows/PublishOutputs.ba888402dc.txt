@@ -1,0 +1,5 @@
+C:\Users\clemF\Desktop\Marave.exe
+C:\Users\clemF\Desktop\Marave.dll
+C:\Users\clemF\Desktop\Marave.deps.json
+C:\Users\clemF\Desktop\Marave.runtimeconfig.json
+C:\Users\clemF\Desktop\Marave.pdb

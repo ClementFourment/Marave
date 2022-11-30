@@ -1,0 +1,56 @@
+﻿<Page x:Class="Marave.De"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Marave"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="De">
+
+    <Grid>
+        <Border Background="#FE6584" ClipToBounds="True" CornerRadius="12" BorderThickness="2" BorderBrush="Black" Width="300" Height="300" VerticalAlignment="Center" HorizontalAlignment="Center" >
+            <Image x:Name="de"  Height="7500" Margin="0 -3 0 0">
+                <Image.Effect>
+                    <DropShadowEffect ShadowDepth="2" BlurRadius="2"/>
+                </Image.Effect>
+                <Image.Source>
+                    <BitmapImage DecodePixelWidth="300" UriSource="/Marave;component/images/de12.png" />
+                </Image.Source>
+            </Image>
+        </Border>
+        <Button 
+            x:Name="throw_dice"
+            Content="Lancer le dé" 
+            Click="throwWheelRoom"
+            Foreground="White"
+            FontSize="14"
+            FontWeight="Medium"
+            Margin="0 350 0 10" Cursor="Hand">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="20"/>
+            </Button.Effect>
+
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#FE6584" />
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FF4C70"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Width="150" Height="30" CornerRadius="12" Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Polygon Points="100, 0 100, 100, 0, 50" Stroke="Black" Fill="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="150,0,0,0" StrokeThickness="5"  />
+
+    </Grid>
+</Page>

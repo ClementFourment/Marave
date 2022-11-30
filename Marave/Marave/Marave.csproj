@@ -1,0 +1,376 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="audio\maitre\maitre0.wav" />
+    <None Remove="audio\maitre\maitre1.mp3" />
+    <None Remove="audio\maitre\maitre1.wav" />
+    <None Remove="audio\maitre\maitre10.mp3" />
+    <None Remove="audio\maitre\maitre10.wav" />
+    <None Remove="audio\maitre\maitre2.mp3" />
+    <None Remove="audio\maitre\maitre2.wav" />
+    <None Remove="audio\maitre\maitre3.mp3" />
+    <None Remove="audio\maitre\maitre3.wav" />
+    <None Remove="audio\maitre\maitre4.mp3" />
+    <None Remove="audio\maitre\maitre4.wav" />
+    <None Remove="audio\maitre\maitre5.mp3" />
+    <None Remove="audio\maitre\maitre5.wav" />
+    <None Remove="audio\maitre\maitre6.mp3" />
+    <None Remove="audio\maitre\maitre6.wav" />
+    <None Remove="audio\maitre\maitre7.mp3" />
+    <None Remove="audio\maitre\maitre7.wav" />
+    <None Remove="audio\maitre\maitre8.mp3" />
+    <None Remove="audio\maitre\maitre8.wav" />
+    <None Remove="audio\maitre\maitre9.mp3" />
+    <None Remove="audio\maitre\maitre9.wav" />
+    <None Remove="audio\theme.wav" />
+    <None Remove="images\background.png" />
+    <None Remove="images\chooseInitiator_1.png" />
+    <None Remove="images\chooseInitiator_2.png" />
+    <None Remove="images\de12.png" />
+    <None Remove="images\enemy\enemy_attack_0.png" />
+    <None Remove="images\enemy\enemy_attack_1.png" />
+    <None Remove="images\enemy\enemy_attack_10.png" />
+    <None Remove="images\enemy\enemy_attack_11.png" />
+    <None Remove="images\enemy\enemy_attack_2.png" />
+    <None Remove="images\enemy\enemy_attack_3.png" />
+    <None Remove="images\enemy\enemy_attack_4.png" />
+    <None Remove="images\enemy\enemy_attack_5.png" />
+    <None Remove="images\enemy\enemy_attack_6.png" />
+    <None Remove="images\enemy\enemy_attack_7.png" />
+    <None Remove="images\enemy\enemy_attack_8.png" />
+    <None Remove="images\enemy\enemy_attack_9.png" />
+    <None Remove="images\enemy\enemy_die_0.png" />
+    <None Remove="images\enemy\enemy_die_1.png" />
+    <None Remove="images\enemy\enemy_die_10.png" />
+    <None Remove="images\enemy\enemy_die_11.png" />
+    <None Remove="images\enemy\enemy_die_2.png" />
+    <None Remove="images\enemy\enemy_die_3.png" />
+    <None Remove="images\enemy\enemy_die_4.png" />
+    <None Remove="images\enemy\enemy_die_5.png" />
+    <None Remove="images\enemy\enemy_die_6.png" />
+    <None Remove="images\enemy\enemy_die_7.png" />
+    <None Remove="images\enemy\enemy_die_8.png" />
+    <None Remove="images\enemy\enemy_die_9.png" />
+    <None Remove="images\enemy\enemy_hurt_0.png" />
+    <None Remove="images\enemy\enemy_hurt_1.png" />
+    <None Remove="images\enemy\enemy_hurt_10.png" />
+    <None Remove="images\enemy\enemy_hurt_11.png" />
+    <None Remove="images\enemy\enemy_hurt_2.png" />
+    <None Remove="images\enemy\enemy_hurt_3.png" />
+    <None Remove="images\enemy\enemy_hurt_4.png" />
+    <None Remove="images\enemy\enemy_hurt_5.png" />
+    <None Remove="images\enemy\enemy_hurt_6.png" />
+    <None Remove="images\enemy\enemy_hurt_7.png" />
+    <None Remove="images\enemy\enemy_hurt_8.png" />
+    <None Remove="images\enemy\enemy_hurt_9.png" />
+    <None Remove="images\enemy\enemy_idle_0.png" />
+    <None Remove="images\enemy\enemy_idle_1.png" />
+    <None Remove="images\enemy\enemy_idle_10.png" />
+    <None Remove="images\enemy\enemy_idle_11.png" />
+    <None Remove="images\enemy\enemy_idle_2.png" />
+    <None Remove="images\enemy\enemy_idle_3.png" />
+    <None Remove="images\enemy\enemy_idle_4.png" />
+    <None Remove="images\enemy\enemy_idle_5.png" />
+    <None Remove="images\enemy\enemy_idle_6.png" />
+    <None Remove="images\enemy\enemy_idle_7.png" />
+    <None Remove="images\enemy\enemy_idle_8.png" />
+    <None Remove="images\enemy\enemy_idle_9.png" />
+    <None Remove="images\heart.png" />
+    <None Remove="images\hero_attack_0.png" />
+    <None Remove="images\hero_attack_1.png" />
+    <None Remove="images\hero_attack_2.png" />
+    <None Remove="images\hero_attack_3.png" />
+    <None Remove="images\hero_attack_4.png" />
+    <None Remove="images\hero_attack_5.png" />
+    <None Remove="images\hero_attack_6.png" />
+    <None Remove="images\hero_attack_7.png" />
+    <None Remove="images\hero_attack_8.png" />
+    <None Remove="images\hero_attack_9.png" />
+    <None Remove="images\hero_die_0.png" />
+    <None Remove="images\hero_die_1.png" />
+    <None Remove="images\hero_die_2.png" />
+    <None Remove="images\hero_die_3.png" />
+    <None Remove="images\hero_die_4.png" />
+    <None Remove="images\hero_die_5.png" />
+    <None Remove="images\hero_die_6.png" />
+    <None Remove="images\hero_die_7.png" />
+    <None Remove="images\hero_die_8.png" />
+    <None Remove="images\hero_die_9.png" />
+    <None Remove="images\hero_hurt_0.png" />
+    <None Remove="images\hero_hurt_1.png" />
+    <None Remove="images\hero_hurt_2.png" />
+    <None Remove="images\hero_hurt_3.png" />
+    <None Remove="images\hero_hurt_4.png" />
+    <None Remove="images\hero_hurt_5.png" />
+    <None Remove="images\hero_hurt_6.png" />
+    <None Remove="images\hero_hurt_7.png" />
+    <None Remove="images\hero_hurt_8.png" />
+    <None Remove="images\hero_hurt_9.png" />
+    <None Remove="images\hero_idle_0.png" />
+    <None Remove="images\hero_idle_1.png" />
+    <None Remove="images\hero_idle_2.png" />
+    <None Remove="images\hero_idle_3.png" />
+    <None Remove="images\hero_idle_4.png" />
+    <None Remove="images\hero_idle_5.png" />
+    <None Remove="images\hero_idle_6.png" />
+    <None Remove="images\hero_idle_7.png" />
+    <None Remove="images\hero_idle_8.png" />
+    <None Remove="images\hero_idle_9.png" />
+    <None Remove="images\hero_run_0.png" />
+    <None Remove="images\hero_run_1.png" />
+    <None Remove="images\hero_run_2.png" />
+    <None Remove="images\hero_run_3.png" />
+    <None Remove="images\hero_run_4.png" />
+    <None Remove="images\hero_run_5.png" />
+    <None Remove="images\hero_run_6.png" />
+    <None Remove="images\hero_run_7.png" />
+    <None Remove="images\hero_run_8.png" />
+    <None Remove="images\hero_run_9.png" />
+    <None Remove="images\hero_walk_0.png" />
+    <None Remove="images\hero_walk_1.png" />
+    <None Remove="images\hero_walk_2.png" />
+    <None Remove="images\hero_walk_3.png" />
+    <None Remove="images\hero_walk_4.png" />
+    <None Remove="images\hero_walk_5.png" />
+    <None Remove="images\hero_walk_6.png" />
+    <None Remove="images\hero_walk_7.png" />
+    <None Remove="images\hero_walk_8.png" />
+    <None Remove="images\hero_walk_9.png" />
+    <None Remove="images\maitre_1.png" />
+    <None Remove="images\maitre_2.png" />
+    <None Remove="images\merlin.png" />
+    <None Remove="images\merlin_1.png" />
+    <None Remove="images\merlin_2.png" />
+    <None Remove="images\mute.png" />
+    <None Remove="images\sound.png" />
+    <None Remove="images\test.gif" />
+    <None Remove="images\wheel-pointer.png" />
+    <None Remove="images\wheel.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPDXMLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>73f0dd5c-d071-46b6-a8bf-897c84eaac49</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLauncher">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>5cb42160-cd7c-4806-9367-1c4a65153f4a</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MediaPlayer">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>22d6f304-b0f6-11d0-94ab-0080c74c7e95</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMLSS">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>c21e9ce5-b317-463b-a1b1-b5e36eed59d0</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPNSSCI">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>453e9e02-8ba4-474c-bfa0-37727e44f6ae</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPNSSCDS">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>73c381a8-548c-49f8-8ad3-c845d12d3c22</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ACTIVEXLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>012f24c1-35b0-11d0-bf2d-0000e8d0d146</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="DMRInternalLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>b63d57b5-46ce-4929-acc3-e1280fac9880</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="audio\maitre\maitre0.wav" />
+    <Resource Include="audio\maitre\maitre1.wav" />
+    <Resource Include="audio\maitre\maitre2.wav" />
+    <Resource Include="audio\maitre\maitre3.wav" />
+    <Resource Include="audio\maitre\maitre4.wav" />
+    <Resource Include="audio\maitre\maitre5.wav" />
+    <Resource Include="audio\maitre\maitre6.wav" />
+    <Resource Include="audio\maitre\maitre7.wav" />
+    <Resource Include="audio\maitre\maitre8.wav" />
+    <Resource Include="audio\maitre\maitre9.wav" />
+    <Resource Include="images\background.png" />
+    <Resource Include="images\chooseInitiator_1.png" />
+    <Resource Include="images\chooseInitiator_2.png" />
+    <Resource Include="images\de12.png" />
+    <Resource Include="images\enemy\enemy_attack_0.png" />
+    <Resource Include="images\enemy\enemy_attack_1.png" />
+    <Resource Include="images\enemy\enemy_attack_10.png" />
+    <Resource Include="images\enemy\enemy_attack_11.png" />
+    <Resource Include="images\enemy\enemy_attack_2.png" />
+    <Resource Include="images\enemy\enemy_attack_3.png" />
+    <Resource Include="images\enemy\enemy_attack_4.png" />
+    <Resource Include="images\enemy\enemy_attack_5.png" />
+    <Resource Include="images\enemy\enemy_attack_6.png" />
+    <Resource Include="images\enemy\enemy_attack_7.png" />
+    <Resource Include="images\enemy\enemy_attack_8.png" />
+    <Resource Include="images\enemy\enemy_attack_9.png" />
+    <Resource Include="images\enemy\enemy_die_0.png" />
+    <Resource Include="images\enemy\enemy_die_1.png" />
+    <Resource Include="images\enemy\enemy_die_10.png" />
+    <Resource Include="images\enemy\enemy_die_11.png" />
+    <Resource Include="images\enemy\enemy_die_2.png" />
+    <Resource Include="images\enemy\enemy_die_3.png" />
+    <Resource Include="images\enemy\enemy_die_4.png" />
+    <Resource Include="images\enemy\enemy_die_5.png" />
+    <Resource Include="images\enemy\enemy_die_6.png" />
+    <Resource Include="images\enemy\enemy_die_7.png" />
+    <Resource Include="images\enemy\enemy_die_8.png" />
+    <Resource Include="images\enemy\enemy_die_9.png" />
+    <Resource Include="images\enemy\enemy_hurt_0.png" />
+    <Resource Include="images\enemy\enemy_hurt_1.png" />
+    <Resource Include="images\enemy\enemy_hurt_10.png" />
+    <Resource Include="images\enemy\enemy_hurt_11.png" />
+    <Resource Include="images\enemy\enemy_hurt_2.png" />
+    <Resource Include="images\enemy\enemy_hurt_3.png" />
+    <Resource Include="images\enemy\enemy_hurt_4.png" />
+    <Resource Include="images\enemy\enemy_hurt_5.png" />
+    <Resource Include="images\enemy\enemy_hurt_6.png" />
+    <Resource Include="images\enemy\enemy_hurt_7.png" />
+    <Resource Include="images\enemy\enemy_hurt_8.png" />
+    <Resource Include="images\enemy\enemy_hurt_9.png" />
+    <Resource Include="images\enemy\enemy_idle_0.png" />
+    <Resource Include="images\enemy\enemy_idle_1.png" />
+    <Resource Include="images\enemy\enemy_idle_10.png" />
+    <Resource Include="images\enemy\enemy_idle_11.png" />
+    <Resource Include="images\enemy\enemy_idle_2.png" />
+    <Resource Include="images\enemy\enemy_idle_3.png" />
+    <Resource Include="images\enemy\enemy_idle_4.png" />
+    <Resource Include="images\enemy\enemy_idle_5.png" />
+    <Resource Include="images\enemy\enemy_idle_6.png" />
+    <Resource Include="images\enemy\enemy_idle_7.png" />
+    <Resource Include="images\enemy\enemy_idle_8.png" />
+    <Resource Include="images\enemy\enemy_idle_9.png" />
+    <Resource Include="images\heart.png" />
+    <Resource Include="images\hero_attack_0.png" />
+    <Resource Include="images\hero_attack_1.png" />
+    <Resource Include="images\hero_attack_2.png" />
+    <Resource Include="images\hero_attack_3.png" />
+    <Resource Include="images\hero_attack_4.png" />
+    <Resource Include="images\hero_attack_5.png" />
+    <Resource Include="images\hero_attack_6.png" />
+    <Resource Include="images\hero_attack_7.png" />
+    <Resource Include="images\hero_attack_8.png" />
+    <Resource Include="images\hero_attack_9.png" />
+    <Resource Include="images\hero_die_0.png" />
+    <Resource Include="images\hero_die_1.png" />
+    <Resource Include="images\hero_die_2.png" />
+    <Resource Include="images\hero_die_3.png" />
+    <Resource Include="images\hero_die_4.png" />
+    <Resource Include="images\hero_die_5.png" />
+    <Resource Include="images\hero_die_6.png" />
+    <Resource Include="images\hero_die_7.png" />
+    <Resource Include="images\hero_die_8.png" />
+    <Resource Include="images\hero_die_9.png" />
+    <Resource Include="images\hero_hurt_0.png" />
+    <Resource Include="images\hero_hurt_1.png" />
+    <Resource Include="images\hero_hurt_2.png" />
+    <Resource Include="images\hero_hurt_3.png" />
+    <Resource Include="images\hero_hurt_4.png" />
+    <Resource Include="images\hero_hurt_5.png" />
+    <Resource Include="images\hero_hurt_6.png" />
+    <Resource Include="images\hero_hurt_7.png" />
+    <Resource Include="images\hero_hurt_8.png" />
+    <Resource Include="images\hero_hurt_9.png" />
+    <Resource Include="images\hero_idle_0.png" />
+    <Resource Include="images\hero_idle_1.png" />
+    <Resource Include="images\hero_idle_2.png" />
+    <Resource Include="images\hero_idle_3.png" />
+    <Resource Include="images\hero_idle_4.png" />
+    <Resource Include="images\hero_idle_5.png" />
+    <Resource Include="images\hero_idle_6.png" />
+    <Resource Include="images\hero_idle_7.png" />
+    <Resource Include="images\hero_idle_8.png" />
+    <Resource Include="images\hero_idle_9.png" />
+    <Resource Include="images\hero_run_0.png" />
+    <Resource Include="images\hero_run_1.png" />
+    <Resource Include="images\hero_run_2.png" />
+    <Resource Include="images\hero_run_3.png" />
+    <Resource Include="images\hero_run_4.png" />
+    <Resource Include="images\hero_run_5.png" />
+    <Resource Include="images\hero_run_6.png" />
+    <Resource Include="images\hero_run_7.png" />
+    <Resource Include="images\hero_run_8.png" />
+    <Resource Include="images\hero_run_9.png" />
+    <Resource Include="images\hero_walk_0.png" />
+    <Resource Include="images\hero_walk_1.png" />
+    <Resource Include="images\hero_walk_2.png" />
+    <Resource Include="images\hero_walk_3.png" />
+    <Resource Include="images\hero_walk_4.png" />
+    <Resource Include="images\hero_walk_5.png" />
+    <Resource Include="images\hero_walk_6.png" />
+    <Resource Include="images\hero_walk_7.png" />
+    <Resource Include="images\hero_walk_8.png" />
+    <Resource Include="images\hero_walk_9.png" />
+    <Resource Include="images\maitre_1.png" />
+    <Resource Include="images\maitre_2.png" />
+    <Resource Include="images\merlin_1.png" />
+    <Resource Include="images\merlin_2.png" />
+    <Resource Include="images\mute.png" />
+    <Resource Include="images\sound.png" />
+    <Resource Include="images\wheel-pointer.png" />
+    <Resource Include="images\wheel.png" />
+  </ItemGroup>
+
+</Project>
