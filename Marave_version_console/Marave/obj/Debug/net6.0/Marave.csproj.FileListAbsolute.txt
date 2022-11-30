@@ -1,0 +1,15 @@
+C:\Users\clemF\Desktop\Marave\Marave\Marave\bin\Debug\net6.0\Marave.exe
+C:\Users\clemF\Desktop\Marave\Marave\Marave\bin\Debug\net6.0\Marave.deps.json
+C:\Users\clemF\Desktop\Marave\Marave\Marave\bin\Debug\net6.0\Marave.runtimeconfig.json
+C:\Users\clemF\Desktop\Marave\Marave\Marave\bin\Debug\net6.0\Marave.dll
+C:\Users\clemF\Desktop\Marave\Marave\Marave\bin\Debug\net6.0\Marave.pdb
+C:\Users\clemF\Desktop\Marave\Marave\Marave\obj\Debug\net6.0\Marave.csproj.AssemblyReference.cache
+C:\Users\clemF\Desktop\Marave\Marave\Marave\obj\Debug\net6.0\Marave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\clemF\Desktop\Marave\Marave\Marave\obj\Debug\net6.0\Marave.AssemblyInfoInputs.cache
+C:\Users\clemF\Desktop\Marave\Marave\Marave\obj\Debug\net6.0\Marave.AssemblyInfo.cs
+C:\Users\clemF\Desktop\Marave\Marave\Marave\obj\Debug\net6.0\Marave.csproj.CoreCompileInputs.cache
+C:\Users\clemF\Desktop\Marave\Marave\Marave\obj\Debug\net6.0\Marave.dll
+C:\Users\clemF\Desktop\Marave\Marave\Marave\obj\Debug\net6.0\refint\Marave.dll
+C:\Users\clemF\Desktop\Marave\Marave\Marave\obj\Debug\net6.0\Marave.pdb
+C:\Users\clemF\Desktop\Marave\Marave\Marave\obj\Debug\net6.0\Marave.genruntimeconfig.cache
+C:\Users\clemF\Desktop\Marave\Marave\Marave\obj\Debug\net6.0\ref\Marave.dll
